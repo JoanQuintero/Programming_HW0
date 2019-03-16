@@ -9,12 +9,13 @@ import problem2.checkPrimes.User;
 
 public class checkPrimes {
 	
-	public static class User {
+	public static class User 
+	{
 		static int input = 0;
 	}
 	
-	public static void main(String args []){
-		
+	public static void main(String args [])
+	{
 		Scanner reader = new Scanner(System.in);  
 		System.out.println("Enter a number: ");
 		User.input = reader.nextInt();   
@@ -41,7 +42,8 @@ public class checkPrimes {
 					"why don't you try again?\n");
 		}
 		
-		else {
+		else 
+		{
 			Thread printPrimes = new Thread(new printPrimes());
 			printPrimes.start();
 		}
@@ -51,8 +53,8 @@ public class checkPrimes {
 class printPrimes implements Runnable
 {
 	@Override
-	public void run() {
-		
+	public void run() 
+	{
 		int i, divisiblebythisamount, j;
 		ArrayList<Integer> listPrimes = new ArrayList<Integer>();
 	    
@@ -63,10 +65,14 @@ class printPrimes implements Runnable
             for( j = 1; j <= User.input; j++)
             {
                 if(i % j == 0)
+                {
                     divisiblebythisamount++;
+                }
             }
             if(divisiblebythisamount == 2)
+            {
                 listPrimes.add(i);
+            }
         }
 		System.out.println("The Prime Numbers up to your input, "
                            + 

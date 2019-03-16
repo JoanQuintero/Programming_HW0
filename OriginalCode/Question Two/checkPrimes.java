@@ -7,12 +7,7 @@ import java.util.Scanner;
 import problem2.checkPrimes.User;
 
 
-public class checkPrimes implements Runnable {
-
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-	}
+public class checkPrimes {
 	
 	public static class User {
 		static int input = 0;
@@ -20,13 +15,11 @@ public class checkPrimes implements Runnable {
 	
 	public static void main(String args []){
 		
-	
-		Scanner reader = new Scanner(System.in);  // Reading input
+		Scanner reader = new Scanner(System.in);  
 		System.out.println("Enter a number: ");
 		User.input = reader.nextInt();   
-		// taking input from user and storing value in variable input
 		
-		if (User.input <= 0) // if input = 0, correct user
+		if (User.input <= 0) 
 		{ 
 			System.out.println(
 					"Sorry, wrorng input \n"
@@ -59,11 +52,10 @@ class printPrimes implements Runnable
 {
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		
 		int i, divisiblebythisamount, j;
 		ArrayList<Integer> listPrimes = new ArrayList<Integer>();
 	    
-		
 		for(i = 1; i <= User.input; i++)
         {
             divisiblebythisamount = 0;

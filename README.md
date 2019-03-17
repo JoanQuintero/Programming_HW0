@@ -1,5 +1,5 @@
-CMP 426/697  
-Programming Assignment 0
+## CMP 426/697  
+#### Programming Assignment 0
 
 Group Members:
 - Miguel Gomez

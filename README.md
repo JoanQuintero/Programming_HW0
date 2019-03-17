@@ -1,7 +1,7 @@
 ## CMP 426/697  
 #### Programming Assignment 0
 
-Group Members:
+Group Members:  
 - Miguel Gomez
 - Esmerlyn Baez
 - Shany M. Lajara Contreras

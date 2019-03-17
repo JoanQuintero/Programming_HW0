@@ -25,7 +25,7 @@ the sequence. Have the parent invoke the wait() call to wait for the child
 process to complete before exiting the program. Perform necessary error checking  
 to ensure that a positive integer is passed on the command line.  
   
-**Coding begins below this line**
+**Coding begins below this line** -- Program done in C
 --------------------------------------------------------------------------
 **Includes**
 ```c
